@@ -1,0 +1,14 @@
+{
+    "name": "hello_owl",
+    "version": "0.0.1",
+    "description": "OWL Node App",
+    "main": "src/index.html",
+    "scripts": {
+        "serve": "serve src"
+    },
+    "author": "Kyle Sin Lynn",
+    "license": "MIT",
+    "devDependencies": {
+        "serve": "^11.3.0"
+    }
+}
