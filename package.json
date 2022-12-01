@@ -1,14 +1,52 @@
 {
     "name": "hello_owl",
     "version": "0.0.1",
-    "description": "OWL Node App",
+    "description": "OWL App",
     "main": "src/index.html",
     "scripts": {
-        "serve": "serve src"
+        "test": "jest",
+        "build": "webpack --mode production",
+        "dev": "webpack-dev-server --mode development"
     },
-    "author": "Kyle Sin Lynn",
-    "license": "MIT",
+    "author": "Someone",
+    "license": "ISC",
     "devDependencies": {
-        "serve": "^11.3.0"
+        "@babel/core": "",
+        "@babel/plugin-proposal-class-properties": "",
+        "babel-jest": "",
+        "babel-loader": "",
+        "babel-plugin-transform-es2015-modules-commonjs": "",
+        "html-webpack-plugin": "",
+        "jest": "",
+        "regenerator-runtime": "",
+        "serve": "",
+        "webpack": "",
+        "webpack-cli": "",
+        "webpack-dev-server": ""
+    },
+    "dependencies": {
+        "@odoo/owl": ""
+    },
+    "babel": {
+        "plugins": [
+            "@babel/plugin-proposal-class-properties"
+        ],
+        "env": {
+            "test": {
+                "plugins": [
+                    "transform-es2015-modules-commonjs"
+                ]
+            }
+        }
+    },
+    "jest": {
+        "verbose": false,
+        "testRegex": "(/tests/.*(test|spec))\\.js?$",
+        "moduleFileExtensions": [
+            "js"
+        ],
+        "transform": {
+            "^.+\\.[t|j]sx?$": "babel-jest"
+        }
     }
 }
