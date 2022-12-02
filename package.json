@@ -4,12 +4,13 @@
     "description": "OWL App",
     "main": "src/index.html",
     "scripts": {
+        "preinstall": "npx only-allow pnpm",
         "test": "jest",
         "build": "webpack --mode production",
         "dev": "webpack-dev-server --mode development"
     },
-    "author": "Someone",
-    "license": "ISC",
+    "author": "Kyle Sin Lynn",
+    "license": "MIT",
     "devDependencies": {
         "@babel/core": "",
         "@babel/plugin-proposal-class-properties": "",
