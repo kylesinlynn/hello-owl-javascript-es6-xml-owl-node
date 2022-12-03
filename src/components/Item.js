@@ -7,7 +7,7 @@ export class Item extends Component {
                 <span t-if="state.update">
                     <input type="text"
                         t-att-id="props.item.id"
-                        t-att-value="state.text"
+                        t-attf-value="{{ props.item.text }}"
                         t-on-change="updateItem" />
                 </span>
                 <span t-else="">
