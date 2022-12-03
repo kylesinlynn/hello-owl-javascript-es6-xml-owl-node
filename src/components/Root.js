@@ -8,7 +8,7 @@ export class Root extends Component {
       <h1>Items</h1>
 
       <div>
-      <input placeholder="Enter a new task" t-on-keyup="addItem"/>
+        <input placeholder="Enter a new task" t-on-keyup="addItem"/>
       </div>
 
       <div t-foreach="activeItems" t-as="item" t-key="item.id">
