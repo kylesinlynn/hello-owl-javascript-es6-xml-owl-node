@@ -25,7 +25,7 @@ module.exports = function (env, argv) {
       extensions: [".js", ".jsx"],
     },
     devServer: {
-      static: path.resolve(__dirname, "public/index.html"),
+      static: path.resolve(__dirname, "public"),
       compress: true,
       hot: true,
       host,

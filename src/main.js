@@ -1,4 +1,4 @@
 import { utils, mount } from "@odoo/owl";
 import { Root } from "./components/Root";
 
-mount(Root, document.body);
+mount(Root, document.body, {dev: true});
